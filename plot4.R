@@ -7,7 +7,7 @@ plot4 <- function(){
                              ('1/2/2007', '2/2/2007')")
         data$Time <- as.POSIXct(strptime(paste(data$Date, data$Time, sep = ' '),
                                          format = '%d/%m/%Y %H:%M:%S'))
-        data$Date <- data$Date <- as.Date(data$Time)
+        data$Date <- as.Date(data$Time)
         
         
         #open png connection and format plot (2 by 2)
